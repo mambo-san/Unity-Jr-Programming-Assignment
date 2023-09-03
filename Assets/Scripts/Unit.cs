@@ -45,6 +45,7 @@ public abstract class Unit : MonoBehaviour,
     {
         if (m_Target != null)
         {
+            Debug.Log("Target:" + m_Target);
             float distance = Vector3.Distance(m_Target.transform.position, transform.position);
             if (distance < 2.0f)
             {
